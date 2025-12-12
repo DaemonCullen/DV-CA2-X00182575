@@ -14,539 +14,166 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Report</title>
   </head>
-
-  <body id="home">
-    <button
-      class="btn-menu position-fixed top-0 end-0 m-3"
-      type="button"
-      data-bs-toggle="offcanvas"
-      data-bs-target="#sideNav"
-      aria-controls="sideNav"
-    >
-      <i class="bi bi-list" style="font-size: 2rem; color: white"></i>
-    </button>
-    <div
-      class="offcanvas offcanvas-end"
-      tabindex="-1"
-      id="sideNav"
-      aria-labelledby="sideNavLabel"
-    >
-      <div class="sidebar-inner">
-        <div class="sidebar-inner2">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title">Menu</h5>
-            <button
-              type="button"
-              class="btn-close text-reset"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="list-unstyled">
-              <li><a href="#home" class="link-1">Home</a></li>
-              <li><a href="#education" class="link-1">Education</a></li>
-              <li><a href="#skills" class="link-1">Skills</a></li>
-              <li><a href="#hobbies" class="link-1">Hobbies</a></li>
-              <li><a href="#contact" class="link-1">Contact</a></li>
-              <li><a href="report.html" class="link-1">Report</a></li>
-            </ul>
-          </div>
-        </div>
+  <body>
+    <div class="container">
+      <div class="text-center mb-4">
+        <h1 class="title-1 m-5">Portfolio Report</h1>
+        <button onclick="window.print()" class="btn btn-primary">
+          Print / Save as PDF
+        </button>
       </div>
-    </div>
-    <div class="vignette"></div>
-    <div class="welcome">
-      <h1 class="title-1">Welcome</h1>
-      <h2 class="title-3">Daemon Cullen</h2>
-      <p class="text-1 para-welcome">
-        This site was created as a sort of showcase of my work, skills and life.
-        Here you can explore everything there is to know from my education to
-        how I operate. Hope you enjoy.
-      </p>
-      <a class="bi bi-caret-down-fill" href="#start"></a>
-    </div>
-    <div class="d-flex flex-column text-center" id="start">
-      <div class="divider">
-        <svg
-          class="bow"
-          version="1.1"
-          id="Capa_1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 0 579.464 579.464"
-          xml:space="preserve"
-        >
-          <g>
-            <g>
-              <path
-                d="M210.968,287.865l-85.411,118.248l65.27-2.283l18.299,62.647l82.855-114.71l82.855,114.71l18.299-62.647l65.27,2.283
-			l-87.408-121.017c-0.977,10.912-10.159,19.501-21.322,19.501h-37.167h-41.046h-39.608
-			C221.656,304.594,213.116,297.424,210.968,287.865z"
-              />
-              <path
-                d="M210.433,273.443v-90.019C194.07,164.939,99.217,66.183,0.097,140.052v135.145c-0.171,1.193-1.138,11.2,9.722,20.529
-			c10.128,8.703,27.023,13.051,50.576,13.051C95.737,308.774,145.545,293.14,210.433,273.443z"
-              />
-              <path
-                d="M579.364,140.052c-95.542-71.206-187.131,17.99-208.267,41.074v92.941c63.871,19.397,113.006,34.704,147.973,34.707
-			c23.55,0,40.443-4.345,50.575-13.051c10.86-9.33,9.894-19.336,9.722-20.529V140.052H579.364z"
-              />
-              <path
-                d="M291.326,289.294h1.316h57.032c3.381,0,6.12-2.742,6.12-6.12v-19.128v-98.694c0-3.378-2.739-6.12-6.12-6.12H231.853
-			c-3.381,0-6.12,2.742-6.12,6.12v102.072v15.75c0,3.378,2.739,6.12,6.12,6.12H291.326z"
-              />
-            </g>
-          </g>
-        </svg>
+
+      <div
+        class="card section-card shadow-sm p-3 m-2 align-items-center justify-content-center d-flex"
+      >
+        <p class="text-center m-0">
+          <strong>GitHub Repo Link:</strong>
+          <a
+            href="https://github.com/DaemonCullen/DV-CA2-X00182575"
+            target="_blank"
+            >https://github.com/DaemonCullen/DV-CA2-X00182575</a
+          >
+        </p>
+        <p class="text-center m-0">
+          <strong>GitHub Pages Link:</strong>
+          <a
+            href="https://daemoncullen.github.io/DV-CA2-X00182575/"
+            target="_blank"
+            >https://daemoncullen.github.io/DV-CA2-X00182575/</a
+          >
+        </p>
+        <p class="text-center m-0">
+          <strong>Website Link:</strong>
+          <a
+            href="https://daemoncullen.github.io/DV-CA2-X00182575/index.html"
+            target="_blank"
+            >https://daemoncullen.github.io/DV-CA2-X00182575/index.html</a
+          >
+        </p>
+      </div>
+
+      <!-- =============================================== -->
+      <!----------------- BOOTSTRAP SECTION ----------------->
+      <!-- =============================================== -->
+
+      <div class="card section-card shadow-sm p-3 m-2">
+        <h2>Bootstrap</h2>
+        <p>
+          For my CA I used many different features of bootstrap to help create
+          smooth and beautiful website. I used the
+          <strong class="highlight">Carousel</strong> to help show information
+          without to much being on the screen at once, allowing the user to
+          scroll through the information. To help the user navigate I used
+          <strong class="highlight">Offcanvas</strong> to make a quick and easy
+          navigation side bar for the user. I also used the
+          <strong class="highlight">Cards</strong> feature to help quickly make
+          nice repeatable sections. For my contact me section I used both the
+          <strong class="highlight">Form</strong> and the
+          <strong class="highlight">Alert</strong> to help make an imersive
+          feeling contact form. I also used bootstraps great
+          <strong class="highlight">Icons</strong> to allow me to add simple
+          icons quick. Finally, throught the entire page I used the long list of
+          smaller features bootstrap has to help personalise the site more such
+          as: <code>col-md</code>, <code>p</code>, <code>m</code>,
+          <code>g</code>, <code>justify-content-center</code>, <code>row</code>,
+          <code>shadow-lg</code> and many more.
+        </p>
       </div>
 
       <!-- =============================================== -->
       <!----------------- EDUCATION SECTION ----------------->
       <!-- =============================================== -->
-      <div class="p-4">
-        <h1 class="title-2 text-center" id="education">Education</h1>
-      </div>
-      <div class="education p-3 flex-fill">
-        <div id="educationCarousel" class="carousel slide" data-bs-ride="false">
-          <div class="carousel-inner">
-            <!-- Primary School -->
-            <div class="carousel-item active" style="height: 50vh">
-              <div
-                class="row align-items-center p-4 text-dark rounded shadow"
-                style="height: 100%"
-              >
-                <!-- Description -->
-                <div class="col-md-6 d-flex flex-column h-100">
-                  <h2 class="mb-3">Primary School</h2>
-                  <div
-                    class="flex-grow-1 d-flex flex-column justify-content-center"
-                  >
-                    <p>
-                      Gaelscoil Faithleann was where I went to primary school as
-                      a kid and it is located in the centre of Kerry. It is a
-                      small irish speaking school in the town of Killarney and
-                      has been open since 1989 as a result of a joint working
-                      group of local parents and members of Conradh na Gaeilge.
-                      The schools logo is a branch with three sloes that
-                      represent the three lakes in Killarney. The uniform is
-                      purple to represent the colour of the sloe fruit.
-                    </p>
-                  </div>
-                </div>
 
-                <!-- Image-->
-                <div
-                  class="col-md-6 d-flex justify-content-center align-items-center"
-                >
-                  <img
-                    src="images/gaelscoil-faithleann-killarney-shyh1.png"
-                    class="img-fluid rounded"
-                    alt="Primary School"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <!-- Secondary School -->
-            <div class="carousel-item" style="height: 50vh">
-              <div
-                class="row align-items-center p-4 text-dark rounded shadow"
-                style="height: 100%"
-              >
-                <!-- Description -->
-                <div class="col-md-6 d-flex flex-column h-100">
-                  <h2 class="mb-3">Secondary School</h2>
-                  <div
-                    class="flex-grow-1 d-flex flex-column justify-content-center"
-                  >
-                    <p>
-                      Adamstown Community College (ACC) is where I went to
-                      school when I moved back to Dublin. It is located on
-                      Finnstown, Lucan, directly beside the train station and
-                      has over a thousand students. In ACC I took many different
-                      classes such as metalwork, technology, biology and of
-                      course computer science.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Image-->
-                <div
-                  class="col-md-6 d-flex justify-content-center align-items-center"
-                >
-                  <img
-                    src="images/Adamstown-Community-School_Easy-Resize.com_.jpg"
-                    class="img-fluid rounded"
-                    alt="Secondary School"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <!-- College -->
-            <div class="carousel-item" style="height: 50vh">
-              <div
-                class="row align-items-center p-4 text-dark rounded shadow"
-                style="height: 100%"
-              >
-                <!-- Description -->
-                <div class="col-md-6 d-flex flex-column h-100">
-                  <h2 class="mb-3">College</h2>
-                  <div
-                    class="flex-grow-1 d-flex flex-column justify-content-center"
-                  >
-                    <p>
-                      Technological University Dublin Tallaght or TUD Tallaght
-                      is the college that I currently attend. TUD have five
-                      different campuses in Dublin and over twenty seven
-                      thousand students. I am studing computer science and I am
-                      majoring in software development.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Image-->
-                <div
-                  class="col-md-6 d-flex justify-content-center align-items-center"
-                >
-                  <img
-                    src="images/main_campus-800x354.jpg"
-                    class="img-fluid rounded"
-                    alt="College"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Carousel Controls -->
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#educationCarousel"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-text">&lt;</span>
-          </button>
-
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#educationCarousel"
-            data-bs-slide="next"
-          >
-            <span class="carousel-text">&gt;</span>
-          </button>
-        </div>
+      <h2 class="title-2 text-center p-3">Summary</h2>
+      <!-- Education -->
+      <div class="card section-card shadow-sm p-3 m-2">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>Primary School:</strong> Gaelscoil Faithleann, Kerry</li>
+          <li>
+            <strong>Secondary School:</strong> Adamstown Community College,
+            Dublin
+          </li>
+          <li>
+            <strong>College:</strong> Technological University Dublin Tallaght,
+            Dublin
+          </li>
+        </ul>
       </div>
 
       <!-- =============================================== -->
       <!------------------ SKILLS SECTION ------------------>
       <!-- =============================================== -->
 
-      <div class="p-4" id="skills">
-        <div class="row gx-3">
-          <div class="col-md-4 d-flex justify-content-center">
-            <h1 class="title-2 text-center">Programming Languages</h1>
+      <div class="card section-card shadow-sm p-3 m-2">
+        <h2>Skills</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Programming Languages</h5>
+            <ul>
+              <li>HTML/CSS</li>
+              <li>Javascript</li>
+              <li>Python</li>
+              <li>C++/C#</li>
+              <li>Dart/Flutter</li>
+            </ul>
           </div>
-          <div class="col-md-4 d-flex justify-content-center">
-            <h1 class="title-2 text-center">Soft Skills</h1>
+          <div class="col-md-4">
+            <h5>Soft Skills</h5>
+            <ul>
+              <li>Creativity</li>
+              <li>Problem Solving</li>
+              <li>Teamwork</li>
+            </ul>
           </div>
-          <div class="col-md-4 d-flex justify-content-center">
-            <h1 class="title-2 text-center">Final Project</h1>
-          </div>
-        </div>
-      </div>
-      <div class="skills p-3 flex-fill">
-        <div style="height: 35vh">
-          <div class="row gx-3" style="height: 100%">
-            <!-- Programming Languages -->
-            <div class="col-md-4 d-flex">
-              <div class="card flex-fill p-3 shadow-lg text-center">
-                <p>
-                  Over the years of computer programming I have picked up a
-                  couple different programming languages. First is
-                  <strong class="highlight">HTML/CSS</strong> which is one of my
-                  favourites as it let's you create art as well as software.
-                  Because of my love of these languages I have also picked up a
-                  little <strong class="highlight">Javascript</strong> to make
-                  those website a little more interactive and alive. Another big
-                  language for me is
-                  <strong class="highlight">Python</strong> as it was the first
-                  language I learned and I used it in my secondary school so it
-                  is one I am well acquainted with. Another language I love is
-                  <strong class="highlight">C++/C#</strong> because growing up
-                  loving games the C languages were always ones I liked because
-                  of what they have created. The final language I have just
-                  started learning is
-                  <strong class="highlight">Dart/Flutter</strong>. I may not
-                  have a much experience with Dart but it is what I am creating
-                  my final year project with and I have found it to be
-                  fantastic.
-                </p>
-              </div>
-            </div>
-
-            <!-- Soft Skills -->
-            <div class="col-md-4 d-flex">
-              <div class="card flex-fill p-3 shadow-lg text-center">
-                <p>
-                  Throughout my life wheater it was working on projects with
-                  people, making something alone or just doing my own thing I
-                  have deffinitly picked up my fair share of usefull soft skills
-                  along with my technical skills. One easy one is
-                  <strong class="highlight">Creativity</strong> which comes from
-                  my love of art. The big one is deffinitly my
-                  <strong class="highlight">Problem Solving</strong> which has
-                  always been a strong suit of mine wheater it's figuring out
-                  how to fix something or how make something more effeicent.
-                  Another one has been a big part in how I work is of course
-                  <strong class="highlight">Teamwork</strong>. Working with all
-                  sorts of people over the years has deffinitly thought me just
-                  how important communication and cooperation is.
-                </p>
-              </div>
-            </div>
-
-            <!-- Certificates -->
-            <div class="col-md-4 d-flex">
-              <div class="card flex-fill p-3 shadow-lg text-center">
-                <p>
-                  Although it may not be completed I thought that my final year
-                  college project was an important one to talk about. My project
-                  named Passenger is an mobile application designed for bikers.
-                  It uses a phones sensors to graph and chart lateral and
-                  longitudinal g-forces in real time to teach bikers about the
-                  limits of their vehicle. This is an important one for me as
-                  someone raised around bikers I have seen my fair share of
-                  crashes and worse because bikes can be deadly if not handled
-                  correctly. So the app can show a rider where the limits are by
-                  viewing their g-forces compared to a limit.
-                </p>
-              </div>
-            </div>
+          <div class="col-md-4">
+            <h5>Final Project</h5>
+            <p>
+              Passenger - a mobile app for bikers to graph lateral and
+              longitudinal g-forces in real-time, helping riders understand
+              their vehicles limits.
+            </p>
           </div>
         </div>
       </div>
 
       <!-- =============================================== -->
-      <!------------------- HOBBY SECTION ------------------->
+      <!------------------ HOBBIES SECTION ------------------>
       <!-- =============================================== -->
-      <div class="p-4">
-        <h1 class="title-2 text-center" id="hobbies">Hobbies</h1>
-      </div>
-      <div class="hobbies p-3 flex-fill">
-        <div id="hobbiesCarousel" class="carousel slide" data-bs-ride="false">
-          <div class="carousel-inner">
-            <!-- Bikes -->
-            <div class="carousel-item active" style="height: 50vh">
-              <div
-                class="row align-items-center p-4 text-dark rounded shadow"
-                style="height: 100%"
-              >
-                <!-- Image-->
-                <div
-                  class="col-md-6 d-flex justify-content-center align-items-center"
-                >
-                  <img
-                    src="images/blog_motorcycle_journey_hero_banner_og_1200x630px.webp"
-                    class="img-fluid rounded"
-                    alt="Motorbikes"
-                  />
-                </div>
-                <!-- Description -->
-                <div class="hobbies-white col-md-6 d-flex flex-column h-100">
-                  <h2 class="mb-3">Motorbikes</h2>
-                  <div
-                    class="flex-grow-1 d-flex flex-column justify-content-center"
-                  >
-                    <p>
-                      As someone who was born and raised in a family of bikers
-                      both casual and racers it was always inevitable that I was
-                      going to fall in love with motorbikes. From the moment I
-                      first sat on and drove my dads Yamaha R1 when I was a kid
-                      I fasinated with bikes. When I was nineteen I got my first
-                      bike which was a Honda CBF250 and was unbeievalbly loud
-                      and light. Although it wasn't the fastest motorbike it was
-                      my first time driving leagelly on the road and it was
-                      great. A few years later I sold it and got a Yamaha XV535
-                      Virago. After a while of driving that I also picked up a
-                      Honda NX500 as the Virago is on its way out and needs a
-                      lot of work.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <!-- Art -->
-            <div class="carousel-item" style="height: 50vh">
-              <div
-                class="row align-items-center p-4 text-dark rounded shadow"
-                style="height: 100%"
-              >
-                <!-- Image-->
-                <div
-                  class="col-md-6 d-flex justify-content-center align-items-center"
-                >
-                  <img
-                    src="images/splash.jpg"
-                    class="img-fluid rounded"
-                    alt="Art"
-                  />
-                </div>
-                <!-- Description -->
-                <div class="col-md-6 d-flex flex-column h-100">
-                  <h2 class="mb-3">Art</h2>
-                  <div
-                    class="flex-grow-1 d-flex flex-column justify-content-center"
-                  >
-                    <p>
-                      For as long as I can remember I have always loved making
-                      things, and since I have always loved computers I ended up
-                      learning how to create art using Blender in secondary
-                      school and have continued to make things since. I have
-                      always been fasinated by the power that Blender and other
-                      software has to create beautiful things. I have even used
-                      it for making certain things in code such as effects on
-                      HTML websites.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Carousel Controls -->
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#hobbiesCarousel"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-text">&lt;</span>
-          </button>
-
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#hobbiesCarousel"
-            data-bs-slide="next"
-          >
-            <span class="carousel-text">&gt;</span>
-          </button>
-        </div>
+      <div class="card section-card shadow-sm p-3 m-2">
+        <h2>Hobbies</h2>
+        <ul>
+          <li>
+            <strong>Motorbikes:</strong> Love for riding, Yamaha R1, Honda
+            CBF250, Yamaha XV535 Virago, Honda NX500
+          </li>
+          <li><strong>Art:</strong> Digital art with Blender.</li>
+        </ul>
       </div>
 
       <!-- =============================================== -->
       <!------------------ CONTACT SECTION ------------------>
       <!-- =============================================== -->
 
-      <div class="contact p-4" id="contact">
-        <div class="row gx-3 p-3" style="height: 100%">
-          <!-- Form -->
-          <div class="col-md-8 d-flex flex-column">
-            <h1 class="title-2 text-center">Contact Me</h1>
-          </div>
-          <!-- Info -->
-          <div class="col-md-4 d-flex flex-column">
-            <h1 class="title-2 text-center">Info</h1>
-          </div>
-        </div>
-        <div class="row gx-3" style="height: 100%">
-          <!-- Form -->
-          <div class="col-md-8 d-flex">
-            <div class="card flex-fill p-3 shadow-lg" style="text-align: left">
-              <form id="contactForm" class="needs-validation" novalidate>
-                <div class="mb-3">
-                  <label for="name" class="form-label">Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    name="name"
-                    required
-                  />
-                  <div class="invalid-feedback">Please enter your name.</div>
-                </div>
-
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    name="email"
-                    required
-                  />
-                  <div class="invalid-feedback">
-                    Please enter a valid email.
-                  </div>
-                </div>
-
-                <div class="mb-3">
-                  <label for="message" class="form-label">Message</label>
-                  <textarea
-                    class="form-control"
-                    id="message"
-                    name="message"
-                    rows="4"
-                    required
-                  ></textarea>
-                  <div class="invalid-feedback">Please enter a message.</div>
-                </div>
-
-                <button type="submit" class="btn btn-primary w-100">
-                  Send Message
-                </button>
-              </form>
-
-              <!-- Alert box -->
-              <div
-                id="formAlert"
-                class="alert alert-success"
-                style="
-                  display: none;
-                  position: fixed;
-                  top: 20px;
-                  right: 20px;
-                  z-index: 9999;
-                "
-              >
-                Your message has been sent!
-              </div>
-            </div>
-          </div>
-          <!-- Info -->
-          <div class="col-md-4 d-flex">
-            <div
-              class="card flex-fill p-3 shadow-lg text-center justify-content-center"
+      <div class="card section-card shadow-sm p-3 m-2">
+        <h2>Contact Info</h2>
+        <ul>
+          <li><strong>Phone:</strong> 0872323323</li>
+          <li><strong>Email:</strong> daemoncullen@gmail.com</li>
+          <li>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/DaemonCullen" target="_blank"
+              >https://github.com/DaemonCullen</a
             >
-              <ul class="list-unstyled">
-                <li><strong>Number:</strong> 0872323323</li>
-                <li><strong>Email:</strong> daemoncullen@gmail.com</li>
-                <li></li>
-                <li>
-                  <strong>GitHub:</strong>
-                  <a href="https://github.com/DaemonCullen" target="_blank"
-                    >https://github.com/DaemonCullen</a
-                  >
-                </li>
-                <li>
-                  <strong>Address:</strong><br />
-                  Houses of the Oireachtas,<br />
-                  Leinster House,<br />
-                  Kildare Street,<br />
-                  Dublin 2,<br />
-                  Ireland
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+          </li>
+          <li>
+            <strong>Address:</strong> Houses of the Oireachtas, Leinster House,
+            Kildare Street, Dublin 2, Ireland
+          </li>
+        </ul>
       </div>
     </div>
 
@@ -555,27 +182,5 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script>
-      const form = document.getElementById("contactForm");
-      const alertBox = document.getElementById("formAlert");
-
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        if (!form.checkValidity()) {
-          form.classList.add("was-validated");
-          return;
-        }
-
-        alertBox.style.display = "block";
-
-        setTimeout(() => {
-          alertBox.style.display = "none";
-        }, 3000);
-
-        form.reset();
-        form.classList.remove("was-validated");
-      });
-    </script>
   </body>
 </html>
